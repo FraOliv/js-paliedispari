@@ -3,7 +3,7 @@
 
 //Creare una funzione per capire se la parola inserita è palindroma
 
-var isPalindrome = function (string) {
+var CheckPalindromo = function (string) {
     if (string == string.split('').reverse().join('')) {
         alert(string + ' is palindrome.');
     }
@@ -12,7 +12,9 @@ var isPalindrome = function (string) {
     }
 }
 
+CheckPalindromo()
+
 document.getElementById('form_id').onsubmit = function() {
-   isPalindrome(document.getElementById('your_input').value);
+   CheckPalindromo(document.getElementById('your_input').value);
     return false;
 }
