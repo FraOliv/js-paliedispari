@@ -8,7 +8,8 @@ var numeroUtente = Number(prompt("scegli un numero da 1 a 5"));
 
 //creo una funzione per generare un numero randomico
 function numeroRandomico(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+  var num = Math.floor(Math.random() * 5  ) + 1 ;
+  return num;
   }
 
 
@@ -48,3 +49,4 @@ if (verdetto == scelta) {
 
 
 
+1
